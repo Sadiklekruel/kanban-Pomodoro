@@ -1,26 +1,46 @@
 $(document).ready(function() {
 
-            $(".ajouter").click(function() {
-                var text = $('input').val();
-                $(".board").append('<li class="tache">' + text + '<span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></li>')
-            })
+    var text;
+    var temps = 5;
 
-            $(".glyphicon.glyphicon-remove-sign").click(function(){
-                var maTache= $(this).parent();
-                console.log(maTache);
-                $(".board2").append(maTache);
-            })
+    $(".ajouter").click(function() {
+        var text = $('input').val();
+        $(".board").append('<li class="tache">' + text + '<span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></li>')
+        $(".glyphicon-remove-sign").click(function() {
+            $(this).parent().remove();
+        })
+        $(".tache").click(function() {
+            $(".board2").append($(this));
+        });
+
+    })
+
+    $(".start").click(function() {
+            $(".timer").data("seconds-left", temps);
+            $('.timer').startTimer({
+                    onComplete: function() {
+                        $("#popupconfirmation").dialog({
+                            buttons: [{
+                                    text: "Oui",
+                                    click: function() {
+                                        alert("bravo");
+                                    }
+                                },
+                                {
+                                    text: "Non",
+                                    click: function() {
+                                        $(".timer").data("seconds-left", temps);
+                                    }
+                                }
+                            ]
+                        });
+                    })
+            });
+    });
+// $("#popupconfirmation").dialog(function(){
+//     autoOpen: false,
+//     width: 400
+// });
 
 
-
-
-
-
-
-            // $(function() {
-            //             $('.timer').startTimer({
-            //                     onComplete: function() {
-            //
-            //
-            //             })
-})
+});
