@@ -1,45 +1,61 @@
+.container{
+    height: 80vh;
+}
 .arrow {
-    width: 365px;
-    height: 100px;
-    background-color: #ccc;
-    position: relative;
-}
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    height: 80px;
 
-.arrow:after {
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 365px;
-    width: 0;
-    height: 0;
-    border: 50px solid transparent;
-    border-left: 12px solid #ccc;
 }
+.arrow img{
+    height: 100%;
+    width: auto;
+    margin-left: -1px;
+    float: left;
+}
+#flechedr{
+    margin-top: -63px;
+    margin-right: -38px;
+    float: right;
 
-.arrow:before {
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 365px;
-    width: 0;
-    height: 0;
-    border: 50px solid transparent;
-    border-left: 12px solid #999;
+}
+h2{
+    text-align: center;
 }
 .col-md-4{
-    padding-left: 0;
+    padding: 0;
 }
 .aumilieu{
     display: flex;
     flex-direction: column;
-    bor
+    border: 1px solid black;
+}
+.timer{
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+}
+.mescol{
+    border:1px solid black;
+    height: 500px;
+    border-radius: 0 0 10px 10px;
+}
+.afenf:first-child{
+    border-left: 1px solid black;
 }
 button{
     margin: 4em;
 }
+ul{
+    padding: 0;
+}
 li {
     text-align: center;
+    padding: 2em;
+    font-size: 1.5em;
+    list-style: none;
 }
+
 .timer, .timer-done, .timer-loop {
     font-size: 30px;
     color: black;

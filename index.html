@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h1>Kanban Pomodoro</h1>
+    <h1 class="text-center">Kanban Pomodoro</h1>
     <div class="container">
         <div class="row">
             <div class="col-md-12 input-group">
@@ -18,12 +18,12 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-md-4">
+        <div class="row ">
+            <div class="col-md-4 afenf">
                 <div class="arrow">
                     <h2>A Faire</h2>
                 </div>
-                <div class="">
+                <div class="mescol">
                     <ul>
                         <li>tache 2</li>
                     </ul>
@@ -33,12 +33,14 @@
 
             <div class="col-md-4">
                 <div class="arrow">
+                    <img src="static/img/Sans titre.png" alt="">
                     <h2>En cours</h2>
                 </div>
-                <div class="aumilieu">
+                <div class="mescol aumilieu">
+                    <div class="">
 
-                    <div class="timer" data-seconds-left=1500></div>
-
+                        <div class="timer" data-seconds-left=1500></div>
+                    </div>
                     <button type="button" class="btn btn-default">Début</button>
                     <button type="button" class="btn btn-default">Pause</button></button>
                 </div>
@@ -47,11 +49,13 @@
 
             <div class="col-md-4">
                 <div class="arrow">
+                    <img src="static/img/Sans titre.png" alt="">
                     <h2>Fait</h2>
+                    <img id ="flechedr" src="static/img/Sans titre.png" alt="">
                 </div>
-                <div class="">
+                <div class="mescol">
                     <ul>
-                        <li>tache 1</li>
+                        <li>tache 1 <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></li>
                     </ul>
                 </div>
             </div>
