@@ -13,21 +13,20 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9 nopadding">
-                    <input type="text" placeholder="Nouvelle tâche">
+                <input type="text" placeholder="Nouvelle tâche">
             </div>
             <div class="col-md-3 nopadding">
-                    <button class="ajouter">Ajouter</button>
+                <button class="ajouter">Ajouter</button>
             </div>
         </div>
 
         <div class="row ">
-            <div class="col-md-4 afenf">
-                <div class="arrow">
+            <div class="col-md-4 afecf">
+                <div class="arrow arrow1">
                     <h2>A Faire</h2>
                 </div>
                 <div class="mescol">
-                    <ul>
-                        <li class="tache">tache 2<span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></li>
+                    <ul class="board">
 
                     </ul>
                 </div>
@@ -42,23 +41,25 @@
                 <div class="mescol aumilieu">
                     <div class="">
 
-                        <div class="timer" data-seconds-left=1500></div>
+                        <div class="timer" data-seconds-left=5></div>
                     </div>
                     <button type="button">Début</button>
                     <button type="button">Pause</button></button>
+                    <div id="popupconfirmation" title="Titre de la fenêtre">
+                        <p>Désirez-vous vraiment supprimer cet item ?</p>
+                    </div>
                 </div>
             </div>
-
 
             <div class="col-md-4">
                 <div class="arrow">
                     <img src="static/img/Sans titre.png" alt="">
                     <h2>Fait</h2>
-                    <img id ="flechedr" src="static/img/Sans titre.png" alt="">
+                    <img id="flechedr" src="static/img/Sans titre.png" alt="">
                 </div>
                 <div class="mescol">
-                    <ul>
-                        <li>tache 1</li>
+                    <ul class="board2">
+
                     </ul>
                 </div>
             </div>

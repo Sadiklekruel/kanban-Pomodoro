@@ -2,8 +2,8 @@
     height: 80vh;
 }
 .arrow {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
     height: 80px;
 
 }
@@ -12,6 +12,9 @@
     width: auto;
     margin-left: -1px;
     float: left;
+}
+.arrow1{
+    border-left: 2px solid black;
 }
 #flechedr{
     margin-top: -63px;
@@ -40,13 +43,10 @@ h2{
     width: 80%;
 }
 .mescol{
-    border:1px solid black;
+    border:2px solid black;
     height: 500px;
     border-radius: 0 0 10px 10px;
     padding: 2em;
-}
-.afenf:first-child{
-    border-left: 1px solid black;
 }
 .nopadding {
   padding: 0;
@@ -76,6 +76,12 @@ li {
     font-size: 1.5em;
     list-style: none;
     margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;;
+    align-items: center;
+}
+.glyphicon-remove-sign{
+    cursor: default;
 }
 .tache:hover {
   background-color: lightgrey;
