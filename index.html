@@ -12,9 +12,11 @@
     <h1 class="text-center">Kanban Pomodoro</h1>
     <div class="container">
         <div class="row">
-            <div class="col-md-12 input-group">
-                    <input type="text" class="form-control" placeholder="Nouvelle tâche" aria-describedby="basic-addon2">
-                    <span class="input-group-addon" id="basic-addon2">Ajouter</span>
+            <div class="col-md-9 nopadding">
+                    <input type="text" placeholder="Nouvelle tâche">
+            </div>
+            <div class="col-md-3 nopadding">
+                    <button class="ajouter">Ajouter</button>
             </div>
         </div>
 
@@ -25,7 +27,8 @@
                 </div>
                 <div class="mescol">
                     <ul>
-                        <li>tache 2</li>
+                        <li class="tache">tache 2<span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></li>
+
                     </ul>
                 </div>
             </div>
@@ -41,8 +44,8 @@
 
                         <div class="timer" data-seconds-left=1500></div>
                     </div>
-                    <button type="button" class="btn btn-default">Début</button>
-                    <button type="button" class="btn btn-default">Pause</button></button>
+                    <button type="button">Début</button>
+                    <button type="button">Pause</button></button>
                 </div>
             </div>
 
@@ -55,7 +58,7 @@
                 </div>
                 <div class="mescol">
                     <ul>
-                        <li>tache 1 <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></li>
+                        <li>tache 1</li>
                     </ul>
                 </div>
             </div>

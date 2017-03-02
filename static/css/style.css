@@ -31,29 +31,54 @@ h2{
     border: 1px solid black;
 }
 .timer{
-    margin-top: 2em;
+    margin: 1em auto;
     display: flex;
     justify-content: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 1em;
+    width: 80%;
 }
 .mescol{
     border:1px solid black;
     height: 500px;
     border-radius: 0 0 10px 10px;
+    padding: 2em;
 }
 .afenf:first-child{
     border-left: 1px solid black;
 }
+.nopadding {
+  padding: 0;
+}
+input {
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 1em;
+}
 button{
-    margin: 4em;
+    margin: 2em;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 1em;
+}
+.ajouter{
+  margin: 0;
+  width: 100%;
 }
 ul{
     padding: 0;
 }
 li {
     text-align: center;
-    padding: 2em;
+    padding: 1em;
     font-size: 1.5em;
     list-style: none;
+    margin-bottom: 1em;
+}
+.tache:hover {
+  background-color: lightgrey;
 }
 
 .timer, .timer-done, .timer-loop {
@@ -81,3 +106,6 @@ li {
   .jst-timeout {
     color: red;
   }
+.hours {
+  display: none;
+}
