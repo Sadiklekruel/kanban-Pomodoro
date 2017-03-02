@@ -1,0 +1,29 @@
+.arrow {
+      width: 365px;
+      height: 100px;
+      background-color: #ccc;
+      border: 1px solid #999;
+      position: relative;
+    }
+
+    .arrow:after {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: 365px;
+      width: 0;
+      height: 0;
+      border: 50px solid transparent;
+      border-left: 12px solid #ccc;
+    }
+
+    .arrow:before {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: 365px;
+      width: 0;
+      height: 0;
+      border: 50px solid transparent;
+      border-left: 12px solid #999;
+    }

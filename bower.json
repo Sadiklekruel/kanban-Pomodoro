@@ -1,0 +1,21 @@
+{
+  "name": "kanbanpomodoro",
+  "homepage": "https://github.com/Sadiklekruel/exoform",
+  "authors": [
+    "Yo <yohanndore48@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "static/external/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
