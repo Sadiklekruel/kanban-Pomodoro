@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Kanban Pomodoro</title>
+    <link rel="stylesheet" href="static/external/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/external/jquery-ui/themes/base/dialog.css">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <h1 class="text-center">Kanban Pomodoro</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 nopadding">
+                <input type="text" class="newtache" placeholder="Nouvelle tâche">
+            </div>
+            <div class="col-md-3 nopadding">
+                <button class="ajouter">Ajouter</button>
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class="col-md-4 afecf">
+                <div class="arrow arrow1">
+                    <h2>A Faire</h2>
+                </div>
+                <div class="mescol">
+                    <ul class="board">
+
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="arrow">
+                    <img src="static/img/Sans titre.png" alt="">
+                    <h2>En cours</h2>
+                </div>
+                <div class="mescol aumilieu">
+                    <div class="">
+                        <div class="timer">
+                            <input id="m" type="text" name="" value="1">
+                            <input id="s" type="text" name="" value="00">
+                        </div>
+                    </div>
+                    <button type="button" class="start">Début</button>
+                    <button type="button" class="break">Pause</button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="arrow">
+                    <img src="static/img/Sans titre.png" alt="">
+                    <h2>Fait</h2>
+                    <img id="flechedr" src="static/img/Sans titre.png" alt="">
+                </div>
+                <div class="mescol">
+                    <ul class="board2">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<div id="popupconfirmation" title="Titre de la fenêtre">
+    <p>Désirez-vous vraiment supprimer cet item ?</p>
+</div>
+<script src="static/external/jquery/dist/jquery.js"></script>
+<script src="static/external/jquery-ui/jquery-ui.js" charset="utf-8"></script>
+<script src="static/external/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/path/to/jquery.countdown.js"></script>
+<script src="static/js/script2.js"></script>
+<script src="" charset="utf-8"></script>
+
+</html>
