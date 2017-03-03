@@ -15,6 +15,18 @@ $(document).ready(function() {
 
     })
 
+
+    $(".start").click(function() {
+        // $(".timer").data("seconds-left", temps);
+        //     $('.timer').startTimer({
+        //             onComplete: function() {
+        //                 $("#popupconfirmation").dialog("open");
+        //             },
+        //             allowPause: true
+        //         });
+        
+    });
+
     $("#popupconfirmation").dialog({
         autoOpen: false,
         width: 400
@@ -25,26 +37,18 @@ $(document).ready(function() {
             text: "Oui",
             click: function() {
                 alert("bravo");
+                $("#popupconfirmation").dialog("close");
             }
         },
         {
             text: "Non",
             click: function() {
-                $(".timer").data("seconds-left", temps);
+                $("#popupconfirmation").dialog("close");
+                // $(".timer").data("seconds-left", temps);
+                // $('.timer').startTimer();
+
             }
         }]
     });
-
-    $(".start").click(function() {
-        $(".timer").data("seconds-left", temps);
-            $('.timer').startTimer({
-                    onComplete: function() {
-                        $("#popupconfirmation").dialog("open");
-                    }
-                });
-
-
-    });
-
 
 });

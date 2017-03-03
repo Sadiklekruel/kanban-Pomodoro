@@ -115,3 +115,8 @@ li {
 .hours {
   display: none;
 }
+#popupconfirmation{
+    background: #3774A0;   /* bleu */
+    color: black;
+    background-color: white;
+}

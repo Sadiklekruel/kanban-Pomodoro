@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>Kanban Pomodoro</title>
     <link rel="stylesheet" href="static/external/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/external/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="static/external/kbw-countdown/dist/css/jquery.countdown.css">
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 
@@ -39,10 +41,7 @@
                     <h2>En cours</h2>
                 </div>
                 <div class="mescol aumilieu">
-                    <div class="">
-
-                        <div class="timer" data-seconds-left=0></div>
-                    </div>
+                    
                     <button type="button" class="start">Début</button>
                     <button type="button">Pause</button></button>
                 </div>
@@ -64,13 +63,14 @@
     </div>
 
 </body>
-<div id="popupconfirmation" title="Titre de la fenêtre">
-    <p>Désirez-vous vraiment supprimer cet item ?</p>
+<div id="popupconfirmation" title="La temps est écoulé">
+    <p>Avez-vous terminé ?</p>
 </div>
 <script src="static/external/jquery/dist/jquery.js"></script>
 <script src="static/external/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="static/external/jQuery-Simple-Timer/jquery.simple.timer.js"></script>
-<script src="" charset="utf-8"></script>
+<script src="static/external/kbw-plugin/dist/js/jquery.plugin.min.js" charset="utf-8"></script>
+<script src="static/external/kbw-countdown/dist/js/jquery.countdown-fr.js"></script>
+<script src="static/external/jquery-ui/jquery-ui.min.js"></script>
 <script src="static/js/script.js"></script>
 
 </html>
