@@ -15,32 +15,36 @@ $(document).ready(function() {
 
     })
 
+    $("#popupconfirmation").dialog({
+        autoOpen: false,
+        width: 400
+    });
+
+    $("#popupconfirmation").dialog({
+        buttons: [{
+            text: "Oui",
+            click: function() {
+                alert("bravo");
+            }
+        },
+        {
+            text: "Non",
+            click: function() {
+                $(".timer").data("seconds-left", temps);
+            }
+        }]
+    });
+
     $(".start").click(function() {
-            $(".timer").data("seconds-left", temps);
+        $(".timer").data("seconds-left", temps);
             $('.timer').startTimer({
                     onComplete: function() {
-                        $("#popupconfirmation").dialog({
-                            buttons: [{
-                                    text: "Oui",
-                                    click: function() {
-                                        alert("bravo");
-                                    }
-                                },
-                                {
-                                    text: "Non",
-                                    click: function() {
-                                        $(".timer").data("seconds-left", temps);
-                                    }
-                                }
-                            ]
-                        });
-                    })
-            });
+                        $("#popupconfirmation").dialog("open");
+                    }
+                });
+
+
     });
-// $("#popupconfirmation").dialog(function(){
-//     autoOpen: false,
-//     width: 400
-// });
 
 
 });
